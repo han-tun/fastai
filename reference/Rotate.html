@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Dihedral — Dihedral • fastai</title>
+<title>Rotate — Rotate • fastai</title>
 
 
 <!-- jquery -->
@@ -39,9 +39,8 @@
 
 
 
-<meta property="og:title" content="Dihedral — Dihedral" />
-<meta property="og:description" content="Apply a random dihedral transformation to a batch of images with a probability `p`
-Apply a random dihedral transformation to a batch of images with a probability `p`" />
+<meta property="og:title" content="Rotate — Rotate" />
+<meta property="og:description" content="Apply a random rotation of at most `max_deg` with probability `p` to a batch of images" />
 
 
 
@@ -121,39 +120,33 @@ Apply a random dihedral transformation to a batch of images with a probability `
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Dihedral</h1>
-    <small class="dont-index">Source: <a href='https://github.com/henry090/fastai/blob/master/R/image_ops.R'><code>R/image_ops.R</code></a>, <a href='https://github.com/henry090/fastai/blob/master/R/vision_augment.R'><code>R/vision_augment.R</code></a></small>
-    <div class="hidden name"><code>Dihedral.Rd</code></div>
+    <h1>Rotate</h1>
+    <small class="dont-index">Source: <a href='https://github.com/henry090/fastai/blob/master/R/image_ops.R'><code>R/image_ops.R</code></a></small>
+    <div class="hidden name"><code>Rotate.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Apply a random dihedral transformation to a batch of images with a probability `p`</p>
-<p>Apply a random dihedral transformation to a batch of images with a probability `p`</p>
+    <p>Apply a random rotation of at most `max_deg` with probability `p` to a batch of images</p>
     </div>
 
-    <pre class="usage"><span class='fu'>Dihedral</span>(
+    <pre class="usage"><span class='fu'>Rotate</span>(
+  max_deg = <span class='fl'>10</span>,
   p = <span class='fl'>0.5</span>,
   draw = <span class='kw'>NULL</span>,
   size = <span class='kw'>NULL</span>,
   mode = <span class='st'>"bilinear"</span>,
   pad_mode = <span class='st'>"reflection"</span>,
-  align_corners = <span class='kw'>NULL</span>,
-  batch = <span class='fl'>FALSE</span>
-)
-
-<span class='fu'>Dihedral</span>(
-  p = <span class='fl'>0.5</span>,
-  draw = <span class='kw'>NULL</span>,
-  size = <span class='kw'>NULL</span>,
-  mode = <span class='st'>"bilinear"</span>,
-  pad_mode = <span class='st'>"reflection"</span>,
-  align_corners = <span class='kw'>NULL</span>,
+  align_corners = <span class='fl'>TRUE</span>,
   batch = <span class='fl'>FALSE</span>
 )</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>max_deg</th>
+      <td><p>max_deg</p></td>
+    </tr>
     <tr>
       <th>p</th>
       <td><p>p</p></td>
@@ -183,6 +176,11 @@ Apply a random dihedral transformation to a batch of images with a probability `
       <td><p>batch</p></td>
     </tr>
     </table>
+
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+
+    
+
 
 
   </div>

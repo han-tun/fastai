@@ -189,7 +189,7 @@ TabularModel(
 
 model %&gt;% plot_lr_find()</code></pre>
 <center>
-<p><img src="images/loss_vig_tab.png" alt="_" style="width: 600px;"></p>
+<p><img src="images/loss_vig_tab.png" alt="_" style="width: 700px;"></p>
 </center>
 </div>
 <div id="fit" class="section level2">
@@ -204,11 +204,12 @@ model %&gt;% plot_lr_find()</code></pre>
 3         0.149708    0.127625    0.958667  0.982307       0.916782         0.911724  
 4         0.132304    0.103252    0.967667  0.986488       0.964497         0.899310  </code></pre>
 <p>Plot confusion matrix:</p>
-<pre><code>interp = ClassificationInterpretation_from_learner(model)
-
-interp %&gt;% plot_confusion_matrix(dpi = 90,figsize = c(6,6))</code></pre>
+<pre><code>model %&gt;% get_confusion_matrix() %&gt;% 
+  fourfoldplot(conf.level = 0, color = c("#ed3b3b", "#0099ff"),
+             margin = 1,main = paste("Confusion Matrix",
+                                     round(sum(diag(.))/sum(.)*100,0),"%",sep = ' '))</code></pre>
 <center>
-<p><img src="images/conf_tab.png" alt="_" style="width: 350px;"></p>
+<p><img src="images/conf_tab.png" alt="_" style="width: 700px;"></p>
 </center>
 </div>
 <div id="conclusion" class="section level2">
@@ -216,6 +217,7 @@ interp %&gt;% plot_confusion_matrix(dpi = 90,figsize = c(6,6))</code></pre>
 <a href="#conclusion" class="anchor"></a>Conclusion</h2>
 <p>Let’s make predictions:</p>
 <pre><code>&gt; model %&gt;% predict(df[1000:1010,])
+        0           1         class
 1  0.004488660 0.99551141       1
 2  0.819206953 0.18079305       0
 3  0.051526461 0.94847351       1
