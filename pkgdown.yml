@@ -3,5 +3,6 @@ pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
   Basic_Tabular: Basic_Tabular.html
-last_built: 2020-09-21T15:19Z
+  basic_img_class: basic_img_class.html
+last_built: 2020-09-22T15:18Z
 
