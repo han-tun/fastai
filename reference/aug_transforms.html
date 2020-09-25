@@ -100,6 +100,12 @@
     <li>
       <a href="../articles/basic_img_class.html">Basic Image Classification</a>
     </li>
+    <li>
+      <a href="../articles/head_pose.html">Head pose</a>
+    </li>
+    <li>
+      <a href="../articles/super_res_gan.html">Super-Resolution GAN</a>
+    </li>
   </ul>
 </li>
       </ul>
@@ -132,25 +138,25 @@
     <p>Utility func to easily create a list of flip, rotate, zoom, warp, lighting transforms.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>aug_transforms</span>(
-  mult = <span class='fl'>1</span>,
-  do_flip = <span class='fl'>TRUE</span>,
-  flip_vert = <span class='fl'>FALSE</span>,
-  max_rotate = <span class='fl'>10</span>,
-  min_zoom = <span class='fl'>1</span>,
-  max_zoom = <span class='fl'>1.1</span>,
-  max_lighting = <span class='fl'>0.2</span>,
-  max_warp = <span class='fl'>0.2</span>,
-  p_affine = <span class='fl'>0.75</span>,
-  p_lighting = <span class='fl'>0.75</span>,
-  xtra_tfms = <span class='kw'>NULL</span>,
-  size = <span class='kw'>NULL</span>,
-  mode = <span class='st'>"bilinear"</span>,
-  pad_mode = <span class='st'>"reflection"</span>,
-  align_corners = <span class='fl'>TRUE</span>,
-  batch = <span class='fl'>FALSE</span>,
-  min_scale = <span class='fl'>1</span>
-)</pre>
+    <pre class="usage"><span class='fu'>aug_transforms</span><span class='op'>(</span>
+  mult <span class='op'>=</span> <span class='fl'>1</span>,
+  do_flip <span class='op'>=</span> <span class='cn'>TRUE</span>,
+  flip_vert <span class='op'>=</span> <span class='cn'>FALSE</span>,
+  max_rotate <span class='op'>=</span> <span class='fl'>10</span>,
+  min_zoom <span class='op'>=</span> <span class='fl'>1</span>,
+  max_zoom <span class='op'>=</span> <span class='fl'>1.1</span>,
+  max_lighting <span class='op'>=</span> <span class='fl'>0.2</span>,
+  max_warp <span class='op'>=</span> <span class='fl'>0.2</span>,
+  p_affine <span class='op'>=</span> <span class='fl'>0.75</span>,
+  p_lighting <span class='op'>=</span> <span class='fl'>0.75</span>,
+  xtra_tfms <span class='op'>=</span> <span class='cn'>NULL</span>,
+  size <span class='op'>=</span> <span class='cn'>NULL</span>,
+  mode <span class='op'>=</span> <span class='st'>"bilinear"</span>,
+  pad_mode <span class='op'>=</span> <span class='st'>"reflection"</span>,
+  align_corners <span class='op'>=</span> <span class='cn'>TRUE</span>,
+  batch <span class='op'>=</span> <span class='cn'>FALSE</span>,
+  min_scale <span class='op'>=</span> <span class='fl'>1</span>
+<span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">

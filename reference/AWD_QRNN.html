@@ -100,6 +100,12 @@
     <li>
       <a href="../articles/basic_img_class.html">Basic Image Classification</a>
     </li>
+    <li>
+      <a href="../articles/head_pose.html">Head pose</a>
+    </li>
+    <li>
+      <a href="../articles/super_res_gan.html">Super-Resolution GAN</a>
+    </li>
   </ul>
 </li>
       </ul>
@@ -132,18 +138,18 @@
     <p>Same as an AWD-LSTM, but using QRNNs instead of LSTMs</p>
     </div>
 
-    <pre class="usage"><span class='fu'>AWD_QRNN</span>(
-  <span class='kw'>vocab_sz</span>,
-  <span class='kw'>emb_sz</span>,
-  <span class='kw'>n_hid</span>,
-  <span class='kw'>n_layers</span>,
-  pad_token = <span class='fl'>1</span>,
-  hidden_p = <span class='fl'>0.2</span>,
-  input_p = <span class='fl'>0.6</span>,
-  embed_p = <span class='fl'>0.1</span>,
-  weight_p = <span class='fl'>0.5</span>,
-  bidir = <span class='fl'>FALSE</span>
-)</pre>
+    <pre class="usage"><span class='fu'>AWD_QRNN</span><span class='op'>(</span>
+  <span class='va'>vocab_sz</span>,
+  <span class='va'>emb_sz</span>,
+  <span class='va'>n_hid</span>,
+  <span class='va'>n_layers</span>,
+  pad_token <span class='op'>=</span> <span class='fl'>1</span>,
+  hidden_p <span class='op'>=</span> <span class='fl'>0.2</span>,
+  input_p <span class='op'>=</span> <span class='fl'>0.6</span>,
+  embed_p <span class='op'>=</span> <span class='fl'>0.1</span>,
+  weight_p <span class='op'>=</span> <span class='fl'>0.5</span>,
+  bidir <span class='op'>=</span> <span class='cn'>FALSE</span>
+<span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">

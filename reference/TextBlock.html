@@ -100,6 +100,12 @@
     <li>
       <a href="../articles/basic_img_class.html">Basic Image Classification</a>
     </li>
+    <li>
+      <a href="../articles/head_pose.html">Head pose</a>
+    </li>
+    <li>
+      <a href="../articles/super_res_gan.html">Super-Resolution GAN</a>
+    </li>
   </ul>
 </li>
       </ul>
@@ -132,17 +138,17 @@
     <p>A `TransformBlock` for texts</p>
     </div>
 
-    <pre class="usage"><span class='fu'>TextBlock</span>(
-  <span class='kw'>tok_tfm</span>,
-  vocab = <span class='kw'>NULL</span>,
-  is_lm = <span class='fl'>FALSE</span>,
-  seq_len = <span class='fl'>72</span>,
-  backwards = <span class='fl'>FALSE</span>,
-  min_freq = <span class='fl'>3</span>,
-  max_vocab = <span class='fl'>60000</span>,
-  special_toks = <span class='kw'>NULL</span>,
-  pad_tok = <span class='kw'>NULL</span>
-)</pre>
+    <pre class="usage"><span class='fu'>TextBlock</span><span class='op'>(</span>
+  <span class='va'>tok_tfm</span>,
+  vocab <span class='op'>=</span> <span class='cn'>NULL</span>,
+  is_lm <span class='op'>=</span> <span class='cn'>FALSE</span>,
+  seq_len <span class='op'>=</span> <span class='fl'>72</span>,
+  backwards <span class='op'>=</span> <span class='cn'>FALSE</span>,
+  min_freq <span class='op'>=</span> <span class='fl'>3</span>,
+  max_vocab <span class='op'>=</span> <span class='fl'>60000</span>,
+  special_toks <span class='op'>=</span> <span class='cn'>NULL</span>,
+  pad_tok <span class='op'>=</span> <span class='cn'>NULL</span>
+<span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">

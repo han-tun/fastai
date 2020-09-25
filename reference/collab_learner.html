@@ -100,6 +100,12 @@
     <li>
       <a href="../articles/basic_img_class.html">Basic Image Classification</a>
     </li>
+    <li>
+      <a href="../articles/head_pose.html">Head pose</a>
+    </li>
+    <li>
+      <a href="../articles/super_res_gan.html">Super-Resolution GAN</a>
+    </li>
   </ul>
 </li>
       </ul>
@@ -132,27 +138,27 @@
     <p>Create a Learner for collaborative filtering on `dls`.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>collab_learner</span>(
-  <span class='kw'>dls</span>,
-  n_factors = <span class='fl'>50</span>,
-  use_nn = <span class='fl'>FALSE</span>,
-  emb_szs = <span class='kw'>NULL</span>,
-  layers = <span class='kw'>NULL</span>,
-  config = <span class='kw'>NULL</span>,
-  y_range = <span class='kw'>NULL</span>,
-  loss_func = <span class='kw'>NULL</span>,
-  opt_func = <span class='fu'><a href='Adam.html'>Adam</a></span>(),
-  lr = <span class='fl'>0.001</span>,
-  splitter = <span class='fu'><a href='trainable_params.html'>trainable_params</a></span>(),
-  cbs = <span class='kw'>NULL</span>,
-  metrics = <span class='kw'>NULL</span>,
-  path = <span class='kw'>NULL</span>,
-  model_dir = <span class='st'>"models"</span>,
-  wd = <span class='kw'>NULL</span>,
-  wd_bn_bias = <span class='fl'>FALSE</span>,
-  train_bn = <span class='fl'>TRUE</span>,
-  moms = <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span>(<span class='fl'>0.95</span>, <span class='fl'>0.85</span>, <span class='fl'>0.95</span>)
-)</pre>
+    <pre class="usage"><span class='fu'>collab_learner</span><span class='op'>(</span>
+  <span class='va'>dls</span>,
+  n_factors <span class='op'>=</span> <span class='fl'>50</span>,
+  use_nn <span class='op'>=</span> <span class='cn'>FALSE</span>,
+  emb_szs <span class='op'>=</span> <span class='cn'>NULL</span>,
+  layers <span class='op'>=</span> <span class='cn'>NULL</span>,
+  config <span class='op'>=</span> <span class='cn'>NULL</span>,
+  y_range <span class='op'>=</span> <span class='cn'>NULL</span>,
+  loss_func <span class='op'>=</span> <span class='cn'>NULL</span>,
+  opt_func <span class='op'>=</span> <span class='fu'><a href='Adam.html'>Adam</a></span><span class='op'>(</span><span class='op'>)</span>,
+  lr <span class='op'>=</span> <span class='fl'>0.001</span>,
+  splitter <span class='op'>=</span> <span class='fu'><a href='trainable_params.html'>trainable_params</a></span><span class='op'>(</span><span class='op'>)</span>,
+  cbs <span class='op'>=</span> <span class='cn'>NULL</span>,
+  metrics <span class='op'>=</span> <span class='cn'>NULL</span>,
+  path <span class='op'>=</span> <span class='cn'>NULL</span>,
+  model_dir <span class='op'>=</span> <span class='st'>"models"</span>,
+  wd <span class='op'>=</span> <span class='cn'>NULL</span>,
+  wd_bn_bias <span class='op'>=</span> <span class='cn'>FALSE</span>,
+  train_bn <span class='op'>=</span> <span class='cn'>TRUE</span>,
+  moms <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span><span class='fl'>0.95</span>, <span class='fl'>0.85</span>, <span class='fl'>0.95</span><span class='op'>)</span>
+<span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">

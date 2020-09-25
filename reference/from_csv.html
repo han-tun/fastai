@@ -100,6 +100,12 @@
     <li>
       <a href="../articles/basic_img_class.html">Basic Image Classification</a>
     </li>
+    <li>
+      <a href="../articles/head_pose.html">Head pose</a>
+    </li>
+    <li>
+      <a href="../articles/super_res_gan.html">Super-Resolution GAN</a>
+    </li>
   </ul>
 </li>
       </ul>
@@ -132,28 +138,28 @@
     <p>Create from `csv` file in `path/csv_fname`</p>
     </div>
 
-    <pre class="usage"><span class='fu'>from_csv</span>(
-  <span class='kw'>path</span>,
-  csv_fname = <span class='st'>"labels.csv"</span>,
-  header = <span class='st'>"infer"</span>,
-  delimiter = <span class='kw'>NULL</span>,
-  valid_pct = <span class='fl'>0.2</span>,
-  seed = <span class='kw'>NULL</span>,
-  text_col = <span class='fl'>0</span>,
-  label_col = <span class='fl'>1</span>,
-  label_delim = <span class='kw'>NULL</span>,
-  y_block = <span class='kw'>NULL</span>,
-  text_vocab = <span class='kw'>NULL</span>,
-  is_lm = <span class='fl'>FALSE</span>,
-  valid_col = <span class='kw'>NULL</span>,
-  tok_tfm = <span class='kw'>NULL</span>,
-  seq_len = <span class='fl'>72</span>,
-  backwards = <span class='fl'>FALSE</span>,
-  bs = <span class='fl'>64</span>,
-  val_bs = <span class='kw'>NULL</span>,
-  shuffle_train = <span class='fl'>TRUE</span>,
-  device = <span class='kw'>NULL</span>
-)</pre>
+    <pre class="usage"><span class='fu'>from_csv</span><span class='op'>(</span>
+  <span class='va'>path</span>,
+  csv_fname <span class='op'>=</span> <span class='st'>"labels.csv"</span>,
+  header <span class='op'>=</span> <span class='st'>"infer"</span>,
+  delimiter <span class='op'>=</span> <span class='cn'>NULL</span>,
+  valid_pct <span class='op'>=</span> <span class='fl'>0.2</span>,
+  seed <span class='op'>=</span> <span class='cn'>NULL</span>,
+  text_col <span class='op'>=</span> <span class='fl'>0</span>,
+  label_col <span class='op'>=</span> <span class='fl'>1</span>,
+  label_delim <span class='op'>=</span> <span class='cn'>NULL</span>,
+  y_block <span class='op'>=</span> <span class='cn'>NULL</span>,
+  text_vocab <span class='op'>=</span> <span class='cn'>NULL</span>,
+  is_lm <span class='op'>=</span> <span class='cn'>FALSE</span>,
+  valid_col <span class='op'>=</span> <span class='cn'>NULL</span>,
+  tok_tfm <span class='op'>=</span> <span class='cn'>NULL</span>,
+  seq_len <span class='op'>=</span> <span class='fl'>72</span>,
+  backwards <span class='op'>=</span> <span class='cn'>FALSE</span>,
+  bs <span class='op'>=</span> <span class='fl'>64</span>,
+  val_bs <span class='op'>=</span> <span class='cn'>NULL</span>,
+  shuffle_train <span class='op'>=</span> <span class='cn'>TRUE</span>,
+  device <span class='op'>=</span> <span class='cn'>NULL</span>
+<span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">

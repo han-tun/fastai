@@ -65,6 +65,12 @@
     <li>
       <a href="articles/basic_img_class.html">Basic Image Classification</a>
     </li>
+    <li>
+      <a href="articles/head_pose.html">Head pose</a>
+    </li>
+    <li>
+      <a href="articles/super_res_gan.html">Super-Resolution GAN</a>
+    </li>
   </ul>
 </li>
       </ul>
@@ -140,10 +146,22 @@
 <li>Python &gt;= 3.6</li>
 <li>CPU or GPU</li>
 </ul>
-<p>The dev version:</p>
+<ol>
+<li><strong>Install miniconda and activate environment:</strong></li>
+</ol>
+<pre><code><a href="https://rdrr.io/pkg/reticulate/man/install_miniconda.html">reticulate::install_miniconda()
+reticulate::py_config()</a></code></pre>
+<ol>
+<li><strong>The dev version:</strong></li>
+</ol>
 <pre><code>devtools::install_github('henry090/fastai')</code></pre>
-<p>Later, you need to install the python module <code>fastai</code>:</p>
-<pre><code><a href="reference/install_fastai.html">install_fastai(version = '2.0.13', gpu = FALSE, cuda_version = '10.1', overwrite = FALSE)</a></code></pre>
+<ol>
+<li><strong>Later, you need to install the python module <code>fastai</code>:</strong></li>
+</ol>
+<pre><code><a href="reference/install_fastai.html">install_fastai(gpu = FALSE, cuda_version = '10.1', overwrite = FALSE)</a></code></pre>
+<ol>
+<li><strong>Restart RStudio!</strong></li>
+</ol>
 </div>
 <div id="tabular-data" class="section level2">
 <h2 class="hasAnchor">
@@ -1060,7 +1078,7 @@ data = model %&gt;% lr_find_() </code></pre>
 <a href="#visualize-batch" class="anchor"></a>Visualize batch</h3>
 <p>Visualize tensor(s):</p>
 <pre><code># get batch
-batch = dls %&gt;% one_batch()
+batch = dls %&gt;% one_batch(convert = TRUE)
 
 # visualize img 9 with transformations
 magick::image_read(batch[[1]][[9]])</code></pre>

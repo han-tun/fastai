@@ -100,6 +100,12 @@
     <li>
       <a href="../articles/basic_img_class.html">Basic Image Classification</a>
     </li>
+    <li>
+      <a href="../articles/head_pose.html">Head pose</a>
+    </li>
+    <li>
+      <a href="../articles/super_res_gan.html">Super-Resolution GAN</a>
+    </li>
   </ul>
 </li>
       </ul>
@@ -132,16 +138,16 @@
     <p>Return `text` and the `n_words` that come after</p>
     </div>
 
-    <pre class="usage"><span class='fu'>LMLearner_predict</span>(
-  <span class='kw'>text</span>,
-  n_words = <span class='fl'>1</span>,
-  no_unk = <span class='fl'>TRUE</span>,
-  temperature = <span class='fl'>1</span>,
-  min_p = <span class='kw'>NULL</span>,
-  no_bar = <span class='fl'>FALSE</span>,
-  decoder = <span class='fu'><a href='decode_spec_tokens.html'>decode_spec_tokens</a></span>(),
-  only_last_word = <span class='fl'>FALSE</span>
-)</pre>
+    <pre class="usage"><span class='fu'>LMLearner_predict</span><span class='op'>(</span>
+  <span class='va'>text</span>,
+  n_words <span class='op'>=</span> <span class='fl'>1</span>,
+  no_unk <span class='op'>=</span> <span class='cn'>TRUE</span>,
+  temperature <span class='op'>=</span> <span class='fl'>1</span>,
+  min_p <span class='op'>=</span> <span class='cn'>NULL</span>,
+  no_bar <span class='op'>=</span> <span class='cn'>FALSE</span>,
+  decoder <span class='op'>=</span> <span class='fu'><a href='decode_spec_tokens.html'>decode_spec_tokens</a></span><span class='op'>(</span><span class='op'>)</span>,
+  only_last_word <span class='op'>=</span> <span class='cn'>FALSE</span>
+<span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">

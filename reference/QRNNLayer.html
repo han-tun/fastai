@@ -100,6 +100,12 @@
     <li>
       <a href="../articles/basic_img_class.html">Basic Image Classification</a>
     </li>
+    <li>
+      <a href="../articles/head_pose.html">Head pose</a>
+    </li>
+    <li>
+      <a href="../articles/super_res_gan.html">Super-Resolution GAN</a>
+    </li>
   </ul>
 </li>
       </ul>
@@ -132,16 +138,16 @@
     <p>Apply a single layer Quasi-Recurrent Neural Network (QRNN) to an input sequence.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>QRNNLayer</span>(
-  <span class='kw'>input_size</span>,
-  hidden_size = <span class='kw'>NULL</span>,
-  save_prev_x = <span class='fl'>FALSE</span>,
-  zoneout = <span class='fl'>0</span>,
-  window = <span class='fl'>1</span>,
-  output_gate = <span class='fl'>TRUE</span>,
-  batch_first = <span class='fl'>TRUE</span>,
-  backward = <span class='fl'>FALSE</span>
-)</pre>
+    <pre class="usage"><span class='fu'>QRNNLayer</span><span class='op'>(</span>
+  <span class='va'>input_size</span>,
+  hidden_size <span class='op'>=</span> <span class='cn'>NULL</span>,
+  save_prev_x <span class='op'>=</span> <span class='cn'>FALSE</span>,
+  zoneout <span class='op'>=</span> <span class='fl'>0</span>,
+  window <span class='op'>=</span> <span class='fl'>1</span>,
+  output_gate <span class='op'>=</span> <span class='cn'>TRUE</span>,
+  batch_first <span class='op'>=</span> <span class='cn'>TRUE</span>,
+  backward <span class='op'>=</span> <span class='cn'>FALSE</span>
+<span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">

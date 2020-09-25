@@ -100,6 +100,12 @@
     <li>
       <a href="../articles/basic_img_class.html">Basic Image Classification</a>
     </li>
+    <li>
+      <a href="../articles/head_pose.html">Head pose</a>
+    </li>
+    <li>
+      <a href="../articles/super_res_gan.html">Super-Resolution GAN</a>
+    </li>
   </ul>
 </li>
       </ul>
@@ -132,29 +138,29 @@
     <p>Create from `path/csv_fname` using `fn_col` and `label_col`</p>
     </div>
 
-    <pre class="usage"><span class='fu'>ImageDataLoaders_from_csv</span>(
-  <span class='kw'>path</span>,
-  csv_fname = <span class='st'>"labels.csv"</span>,
-  header = <span class='st'>"infer"</span>,
-  delimiter = <span class='kw'>NULL</span>,
-  valid_pct = <span class='fl'>0.2</span>,
-  seed = <span class='kw'>NULL</span>,
-  fn_col = <span class='fl'>0</span>,
-  folder = <span class='kw'>NULL</span>,
-  suff = <span class='st'>""</span>,
-  label_col = <span class='fl'>1</span>,
-  label_delim = <span class='kw'>NULL</span>,
-  y_block = <span class='kw'>NULL</span>,
-  valid_col = <span class='kw'>NULL</span>,
-  item_tfms = <span class='kw'>NULL</span>,
-  batch_tfms = <span class='kw'>NULL</span>,
-  bs = <span class='fl'>64</span>,
-  val_bs = <span class='kw'>NULL</span>,
-  size = <span class='kw'>NULL</span>,
-  shuffle_train = <span class='fl'>TRUE</span>,
-  device = <span class='kw'>NULL</span>,
-  <span class='kw'>...</span>
-)</pre>
+    <pre class="usage"><span class='fu'>ImageDataLoaders_from_csv</span><span class='op'>(</span>
+  <span class='va'>path</span>,
+  csv_fname <span class='op'>=</span> <span class='st'>"labels.csv"</span>,
+  header <span class='op'>=</span> <span class='st'>"infer"</span>,
+  delimiter <span class='op'>=</span> <span class='cn'>NULL</span>,
+  valid_pct <span class='op'>=</span> <span class='fl'>0.2</span>,
+  seed <span class='op'>=</span> <span class='cn'>NULL</span>,
+  fn_col <span class='op'>=</span> <span class='fl'>0</span>,
+  folder <span class='op'>=</span> <span class='cn'>NULL</span>,
+  suff <span class='op'>=</span> <span class='st'>""</span>,
+  label_col <span class='op'>=</span> <span class='fl'>1</span>,
+  label_delim <span class='op'>=</span> <span class='cn'>NULL</span>,
+  y_block <span class='op'>=</span> <span class='cn'>NULL</span>,
+  valid_col <span class='op'>=</span> <span class='cn'>NULL</span>,
+  item_tfms <span class='op'>=</span> <span class='cn'>NULL</span>,
+  batch_tfms <span class='op'>=</span> <span class='cn'>NULL</span>,
+  bs <span class='op'>=</span> <span class='fl'>64</span>,
+  val_bs <span class='op'>=</span> <span class='cn'>NULL</span>,
+  size <span class='op'>=</span> <span class='cn'>NULL</span>,
+  shuffle_train <span class='op'>=</span> <span class='cn'>TRUE</span>,
+  device <span class='op'>=</span> <span class='cn'>NULL</span>,
+  <span class='va'>...</span>
+<span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">

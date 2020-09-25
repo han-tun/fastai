@@ -100,6 +100,12 @@
     <li>
       <a href="../articles/basic_img_class.html">Basic Image Classification</a>
     </li>
+    <li>
+      <a href="../articles/head_pose.html">Head pose</a>
+    </li>
+    <li>
+      <a href="../articles/super_res_gan.html">Super-Resolution GAN</a>
+    </li>
   </ul>
 </li>
       </ul>
@@ -132,15 +138,15 @@
     <p>Convenience function to easily create a config for `TabularModel`</p>
     </div>
 
-    <pre class="usage"><span class='fu'>tabular_config</span>(
-  ps = <span class='kw'>NULL</span>,
-  embed_p = <span class='fl'>0</span>,
-  y_range = <span class='kw'>NULL</span>,
-  use_bn = <span class='fl'>TRUE</span>,
-  bn_final = <span class='fl'>FALSE</span>,
-  bn_cont = <span class='fl'>TRUE</span>,
-  act_cls = <span class='kw'>nn</span><span class='op'>$</span><span class='fu'>ReLU</span>(inplace = <span class='fl'>TRUE</span>)
-)</pre>
+    <pre class="usage"><span class='fu'>tabular_config</span><span class='op'>(</span>
+  ps <span class='op'>=</span> <span class='cn'>NULL</span>,
+  embed_p <span class='op'>=</span> <span class='fl'>0</span>,
+  y_range <span class='op'>=</span> <span class='cn'>NULL</span>,
+  use_bn <span class='op'>=</span> <span class='cn'>TRUE</span>,
+  bn_final <span class='op'>=</span> <span class='cn'>FALSE</span>,
+  bn_cont <span class='op'>=</span> <span class='cn'>TRUE</span>,
+  act_cls <span class='op'>=</span> <span class='va'>nn</span><span class='op'>$</span><span class='fu'>ReLU</span><span class='op'>(</span>inplace <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span>
+<span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">

@@ -100,6 +100,12 @@
     <li>
       <a href="../articles/basic_img_class.html">Basic Image Classification</a>
     </li>
+    <li>
+      <a href="../articles/head_pose.html">Head pose</a>
+    </li>
+    <li>
+      <a href="../articles/super_res_gan.html">Super-Resolution GAN</a>
+    </li>
   </ul>
 </li>
       </ul>
@@ -132,24 +138,24 @@
     <p>Resnet block of `nf` features. `conv_kwargs` are passed to `conv_layer`.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>DenseResBlock</span>(
-  <span class='kw'>nf</span>,
-  norm_type = <span class='fl'>1</span>,
-  ks = <span class='fl'>3</span>,
-  stride = <span class='fl'>1</span>,
-  padding = <span class='kw'>NULL</span>,
-  bias = <span class='kw'>NULL</span>,
-  ndim = <span class='fl'>2</span>,
-  bn_1st = <span class='fl'>TRUE</span>,
-  act_cls = <span class='kw'>nn</span><span class='op'>$</span><span class='kw'>ReLU</span>,
-  transpose = <span class='fl'>FALSE</span>,
-  init = <span class='st'>"auto"</span>,
-  xtra = <span class='kw'>NULL</span>,
-  bias_std = <span class='fl'>0.01</span>,
-  dilation = <span class='fl'>1</span>,
-  groups = <span class='fl'>1</span>,
-  padding_mode = <span class='st'>"zeros"</span>
-)</pre>
+    <pre class="usage"><span class='fu'>DenseResBlock</span><span class='op'>(</span>
+  <span class='va'>nf</span>,
+  norm_type <span class='op'>=</span> <span class='fl'>1</span>,
+  ks <span class='op'>=</span> <span class='fl'>3</span>,
+  stride <span class='op'>=</span> <span class='fl'>1</span>,
+  padding <span class='op'>=</span> <span class='cn'>NULL</span>,
+  bias <span class='op'>=</span> <span class='cn'>NULL</span>,
+  ndim <span class='op'>=</span> <span class='fl'>2</span>,
+  bn_1st <span class='op'>=</span> <span class='cn'>TRUE</span>,
+  act_cls <span class='op'>=</span> <span class='va'>nn</span><span class='op'>$</span><span class='va'>ReLU</span>,
+  transpose <span class='op'>=</span> <span class='cn'>FALSE</span>,
+  init <span class='op'>=</span> <span class='st'>"auto"</span>,
+  xtra <span class='op'>=</span> <span class='cn'>NULL</span>,
+  bias_std <span class='op'>=</span> <span class='fl'>0.01</span>,
+  dilation <span class='op'>=</span> <span class='fl'>1</span>,
+  groups <span class='op'>=</span> <span class='fl'>1</span>,
+  padding_mode <span class='op'>=</span> <span class='st'>"zeros"</span>
+<span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">

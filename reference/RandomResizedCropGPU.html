@@ -100,6 +100,12 @@
     <li>
       <a href="../articles/basic_img_class.html">Basic Image Classification</a>
     </li>
+    <li>
+      <a href="../articles/head_pose.html">Head pose</a>
+    </li>
+    <li>
+      <a href="../articles/super_res_gan.html">Super-Resolution GAN</a>
+    </li>
   </ul>
 </li>
       </ul>
@@ -132,13 +138,13 @@
     <p>Picks a random scaled crop of an image and resize it to `size`</p>
     </div>
 
-    <pre class="usage"><span class='fu'>RandomResizedCropGPU</span>(
-  <span class='kw'>size</span>,
-  min_scale = <span class='fl'>0.08</span>,
-  ratio = <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span>(<span class='fl'>0.75</span>, <span class='fl'>1.33333333333333</span>),
-  mode = <span class='st'>"bilinear"</span>,
-  valid_scale = <span class='fl'>1</span>
-)</pre>
+    <pre class="usage"><span class='fu'>RandomResizedCropGPU</span><span class='op'>(</span>
+  <span class='va'>size</span>,
+  min_scale <span class='op'>=</span> <span class='fl'>0.08</span>,
+  ratio <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span><span class='fl'>0.75</span>, <span class='fl'>1.33333333333333</span><span class='op'>)</span>,
+  mode <span class='op'>=</span> <span class='st'>"bilinear"</span>,
+  valid_scale <span class='op'>=</span> <span class='fl'>1</span>
+<span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
