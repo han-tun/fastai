@@ -6,13 +6,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Equals of tensor — equals.torch.Tensor • fastai</title>
+<title>train_loader — train_loader • fastai</title>
 
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/cosmo/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/readable/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
@@ -39,8 +39,8 @@
 
 
 
-<meta property="og:title" content="Equals of tensor — equals.torch.Tensor" />
-<meta property="og:description" content="Equals of tensor" />
+<meta property="og:title" content="train_loader — train_loader" />
+<meta property="og:description" content="Data loader. Combines a dataset and a sampler, and provides an iterable over" />
 
 
 
@@ -61,7 +61,7 @@
   <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-topic">
       <header>
-      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
@@ -72,24 +72,18 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">fastai</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="../index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="../reference/index.html">Reference</a>
+  <a href="../index.html">Home</a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Articles
+    Tutorials
      
     <span class="caret"></span>
   </a>
@@ -97,7 +91,40 @@
     <li>
       <a href="../articles/Basic_Tabular.html">Basic Tabular</a>
     </li>
+    <li>
+      <a href="../articles/basic_img_class.html">Basic Image Classification</a>
+    </li>
+    <li>
+      <a href="../articles/head_pose.html">Head pose</a>
+    </li>
+    <li>
+      <a href="../articles/super_res_gan.html">Super-Resolution GAN</a>
+    </li>
   </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Migrating
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="../articles/migrating_pytorch.html">Plain Pytorch</a>
+    </li>
+    <li>
+      <a href="../articles/migrating_ignite.html">Ignite</a>
+    </li>
+    <li>
+      <a href="../articles/lightning.html">Lightning</a>
+    </li>
+    <li>
+      <a href="../articles/catalyst.html">Catalyst</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="../reference/index.html">Reference</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -120,18 +147,27 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Equals of tensor</h1>
-    <small class="dont-index">Source: <a href='https://github.com/henry090/fastai/blob/master/R/generics_tensor.R'><code>R/generics_tensor.R</code></a></small>
-    <div class="hidden name"><code>equals.torch.Tensor.Rd</code></div>
+    <h1>train_loader</h1>
+    <small class="dont-index">Source: <a href='https://github.com/henry090/fastai/blob/master/R/custom_modules.R'><code>R/custom_modules.R</code></a></small>
+    <div class="hidden name"><code>train_loader.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Equals of tensor</p>
+    <p>Data loader. Combines a dataset and a sampler, and provides an iterable over</p>
     </div>
 
-    <pre class="usage"><span class='fu'>equals.torch.Tensor</span>(<span class='no'>a</span>, <span class='no'>b</span>)</pre>
+    <pre class="usage"><span class='fu'>train_loader</span><span class='op'>(</span><span class='op'>)</span></pre>
 
 
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+
+    <p>the given dataset. The :class:`~torch.utils.data.DataLoader` supports both map-style and
+iterable-style datasets with single- or multi-process loading, customizing
+loading order and optional automatic batching (collation) and memory pinning. See :py:mod:`torch.utils.data` documentation page for more details.</p>
+    <h2 class="hasAnchor" id="the-"><a class="anchor" href="#the-"></a>The </h2>
+
+    <p>class:`~torch.utils.data.DataLoader` supports both map-style and:
+iterable-style datasets with single- or multi-process loading, customizing loading order and optional automatic batching (collation) and memory pinning.</p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -148,7 +184,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>
