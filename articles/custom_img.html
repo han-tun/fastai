@@ -59,6 +59,9 @@
     <li>
       <a href="../articles/super_res_gan.html">Super-Resolution GAN</a>
     </li>
+    <li>
+      <a href="../articles/medical_dcm.html">Medical image classification</a>
+    </li>
   </ul>
 </li>
 <li class="dropdown">
@@ -221,7 +224,7 @@
 <a href="#fit-model" class="anchor"></a>Fit model</h2>
 <p>Define <code>cnn_learner</code> and fit. But before that it is better to see the train metrics as well.</p>
 <div class="sourceCode" id="cb7"><pre class="downlit">
-<span class="va">learn</span> <span class="op">=</span> <span class="fu"><a href="../reference/cnn_learner.html">cnn_learner</a></span><span class="op">(</span><span class="va">dls</span>, <span class="va">resnet50</span>, metrics <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="va">accuracy</span>, <span class="va">error_rate</span><span class="op">)</span><span class="op">)</span>
+<span class="va">learn</span> <span class="op">=</span> <span class="fu"><a href="../reference/cnn_learner.html">cnn_learner</a></span><span class="op">(</span><span class="va">dls</span>, <span class="fu"><a href="../reference/resnet50.html">resnet50</a></span><span class="op">(</span><span class="op">)</span>, metrics <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="va">accuracy</span>, <span class="va">error_rate</span><span class="op">)</span><span class="op">)</span>
 
 <span class="va">learn</span><span class="op">$</span><span class="va">recorder</span><span class="op">$</span><span class="va">train_metrics</span> <span class="op">=</span> <span class="cn">TRUE</span></pre></div>
 <div class="sourceCode" id="cb8"><pre class="downlit">

@@ -65,6 +65,9 @@
     <li>
       <a href="articles/super_res_gan.html">Super-Resolution GAN</a>
     </li>
+    <li>
+      <a href="articles/medical_dcm.html">Medical image classification</a>
+    </li>
   </ul>
 </li>
 <li class="dropdown">
@@ -325,7 +328,7 @@ oxford-iiit-pet/images/american_pit_bull_terrier_129.jpg</code></pre>
 <pre><code>dls %&gt;% show_batch(dpi = 150)</code></pre>
 <p><img src="files/pets.png" height="500" align="center" alt="Pets"></p>
 <p>Model architecture:</p>
-<pre><code>learn = cnn_learner(dls, resnet34, metrics = error_rate)</code></pre>
+<pre><code>learn = cnn_learner(dls, resnet34(), metrics = error_rate)</code></pre>
 <p>And fit:</p>
 <pre><code>learn %&gt;% fit_one_cycle(n_epoch = 2)
 
@@ -364,7 +367,7 @@ data = ImageDataLoaders_from_folder(path, batch_tfms = tfms, size = 26, bs = bs)
 # Visualize and train 
 data %&gt;% show_batch(dpi = 150)
                
-learn = cnn_learner(data, resnet18, metrics = accuracy)
+learn = cnn_learner(data, resnet18(), metrics = accuracy)
 learn %&gt;% fit(2)</a></code></pre>
 <p><img src="files/mnist.png" height="500" align="center" alt="Mnist"></p>
 <div id="gan-example" class="section level3">
@@ -878,7 +881,7 @@ tensor([0., 0., 0.,  ..., 0., 0., 0.], device='cuda:0')</code></pre>
 tensor(0.0011, device='cuda:0')</code></pre>
 
 </details><p>Resnet34 model architecture for unet:</p>
-<pre><code>learn = unet_learner(dls, resnet34, metrics = acc_camvid)</code></pre>
+<pre><code>learn = unet_learner(dls, resnet34(), metrics = acc_camvid)</code></pre>
 <p>And finally, fit:</p>
 <pre><code>lr = 3e-3
 wd = 1e-2

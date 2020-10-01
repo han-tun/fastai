@@ -59,6 +59,9 @@
     <li>
       <a href="../articles/super_res_gan.html">Super-Resolution GAN</a>
     </li>
+    <li>
+      <a href="../articles/medical_dcm.html">Medical image classification</a>
+    </li>
   </ul>
 </li>
 <li class="dropdown">
@@ -155,7 +158,7 @@
 <div class="sourceCode" id="cb3"><pre class="downlit">
 <span class="va">bs</span> <span class="op">=</span> <span class="fl">10</span>
 <span class="va">size</span> <span class="op">=</span> <span class="fl">64</span>
-<span class="va">arch</span> <span class="op">=</span> <span class="va">resnet34</span>
+<span class="va">arch</span> <span class="op">=</span> <span class="fu"><a href="../reference/resnet34.html">resnet34</a></span><span class="op">(</span><span class="op">)</span>
 
 <span class="va">get_dls</span> <span class="op">=</span> <span class="kw">function</span><span class="op">(</span><span class="va">bs</span>, <span class="va">size</span><span class="op">)</span> <span class="op">{</span>
   <span class="va">dblock</span> <span class="op">=</span> <span class="fu"><a href="../reference/DataBlock.html">DataBlock</a></span><span class="op">(</span>blocks <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="va">ImageBlock</span>, <span class="va">ImageBlock</span><span class="op">)</span>,

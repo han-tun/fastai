@@ -59,6 +59,9 @@
     <li>
       <a href="../articles/super_res_gan.html">Super-Resolution GAN</a>
     </li>
+    <li>
+      <a href="../articles/medical_dcm.html">Medical image classification</a>
+    </li>
   </ul>
 </li>
 <li class="dropdown">
@@ -223,7 +226,7 @@
 <a href="#fit" class="anchor"></a>Fit</h2>
 <p>Run for 5 epochs and see results:</p>
 <div class="sourceCode" id="cb6"><pre class="downlit">
-<span class="va">learn</span> <span class="op">=</span> <span class="fu"><a href="../reference/cnn_learner.html">cnn_learner</a></span><span class="op">(</span><span class="va">dls</span>, <span class="va">resnet34</span><span class="op">)</span>
+<span class="va">learn</span> <span class="op">=</span> <span class="fu"><a href="../reference/cnn_learner.html">cnn_learner</a></span><span class="op">(</span><span class="va">dls</span>, <span class="fu"><a href="../reference/resnet34.html">resnet34</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span>
 
 <span class="va">learn</span> <span class="op">%&gt;%</span> <span class="fu"><a href="../reference/lr_find.html">lr_find</a></span><span class="op">(</span><span class="op">)</span>
 
