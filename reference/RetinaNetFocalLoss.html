@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Vgg13_bn — vgg13_bn • fastai</title>
+<title>RetinaNetFocalLoss — RetinaNetFocalLoss • fastai</title>
 
 
 <!-- jquery -->
@@ -45,8 +45,8 @@
 
 
 
-<meta property="og:title" content="Vgg13_bn — vgg13_bn" />
-<meta property="og:description" content="VGG 13-layer model (configuration &quot;B&quot;) with batch normalization" />
+<meta property="og:title" content="RetinaNetFocalLoss — RetinaNetFocalLoss" />
+<meta property="og:description" content="Base class for all neural network modules." />
 
 
 
@@ -180,36 +180,51 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Vgg13_bn</h1>
-    <small class="dont-index">Source: <a href='https://github.com/henry090/fastai/blob/master/R/vision_models.R'><code>R/vision_models.R</code></a></small>
-    <div class="hidden name"><code>vgg13_bn.Rd</code></div>
+    <h1>RetinaNetFocalLoss</h1>
+    <small class="dont-index">Source: <a href='https://github.com/henry090/fastai/blob/master/R/fastaibuilt.R'><code>R/fastaibuilt.R</code></a></small>
+    <div class="hidden name"><code>RetinaNetFocalLoss.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>VGG 13-layer model (configuration "B") with batch normalization</p>
+    <p>Base class for all neural network modules.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>vgg13_bn</span><span class='op'>(</span>pretrained <span class='op'>=</span> <span class='cn'>FALSE</span>, <span class='va'>progress</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>RetinaNetFocalLoss</span><span class='op'>(</span><span class='va'>...</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>pretrained</th>
-      <td><p>pretrained or not</p></td>
+      <th>gamma</th>
+      <td><p>gamma</p></td>
     </tr>
     <tr>
-      <th>progress</th>
-      <td><p>to see progress bar or not</p></td>
+      <th>alpha</th>
+      <td><p>alpha</p></td>
+    </tr>
+    <tr>
+      <th>pad_idx</th>
+      <td><p>pad_idx</p></td>
+    </tr>
+    <tr>
+      <th>scales</th>
+      <td><p>scales</p></td>
+    </tr>
+    <tr>
+      <th>ratios</th>
+      <td><p>ratios</p></td>
+    </tr>
+    <tr>
+      <th>reg_loss</th>
+      <td><p>reg_loss</p></td>
     </tr>
     </table>
 
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
-
-    <p>model</p>
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>"Very Deep Convolutional Networks For Large-Scale Image Recognition" &lt;https://arxiv.org/pdf/1409.1556.pdf&gt;</p>
+    <p>Your models should also subclass this class. Modules can also contain other Modules, allowing to nest them in
+a tree structure. You can assign the submodules as regular attributes:: import torch.nn as nn import torch.nn.functional as F class Model(nn.Module): def __init__(self): super(Model, self).__init__() self.conv1 = nn.Conv2d(1, 20, 5) self.conv2 = nn.Conv2d(20, 20, 5) def forward(self, x): x = F.relu(self.conv1(x)) return F.relu(self.conv2(x)) Submodules assigned in this way will be registered, and will have their
+parameters converted too when you call :meth:`to`, etc.</p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
