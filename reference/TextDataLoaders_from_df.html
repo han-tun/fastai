@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>from_df — TextDataLoaders_from_df • fastai</title>
+<title>TextDataLoaders_from_df — TextDataLoaders_from_df • fastai</title>
 
 
 <!-- jquery -->
@@ -45,7 +45,7 @@
 
 
 
-<meta property="og:title" content="from_df — TextDataLoaders_from_df" />
+<meta property="og:title" content="TextDataLoaders_from_df — TextDataLoaders_from_df" />
 <meta property="og:description" content="Create from `df` in `path` with `valid_pct`
 '" />
 
@@ -151,6 +151,18 @@
     </li>
   </ul>
 </li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Training
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="../articles/optimizer.html">Optimizers</a>
+    </li>
+  </ul>
+</li>
 <li>
   <a href="../reference/index.html">Reference</a>
 </li>
@@ -181,7 +193,7 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>from_df</h1>
+    <h1>TextDataLoaders_from_df</h1>
     <small class="dont-index">Source: <a href='https://github.com/henry090/fastai/blob/master/R/text_data.R'><code>R/text_data.R</code></a></small>
     <div class="hidden name"><code>TextDataLoaders_from_df.Rd</code></div>
     </div>
@@ -225,7 +237,7 @@
     </tr>
     <tr>
       <th>valid_pct</th>
-      <td><p>valid_pct</p></td>
+      <td><p>validation percentage</p></td>
     </tr>
     <tr>
       <th>seed</th>
@@ -273,11 +285,11 @@
     </tr>
     <tr>
       <th>bs</th>
-      <td><p>bs</p></td>
+      <td><p>batch size</p></td>
     </tr>
     <tr>
       <th>val_bs</th>
-      <td><p>val_bs</p></td>
+      <td><p>validation batch size, if not specified then val_bs is the same as bs.</p></td>
     </tr>
     <tr>
       <th>shuffle_train</th>
@@ -289,6 +301,9 @@
     </tr>
     </table>
 
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+
+    <p>text loader</p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

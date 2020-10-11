@@ -592,6 +592,9 @@
     <loc>https://henry090.github.io/fastai//reference/TextBlock_from_folder.html</loc>
   </url>
   <url>
+    <loc>https://henry090.github.io/fastai//reference/TextDataLoaders_from_csv.html</loc>
+  </url>
+  <url>
     <loc>https://henry090.github.io/fastai//reference/TextDataLoaders_from_df.html</loc>
   </url>
   <url>
@@ -841,9 +844,6 @@
     <loc>https://henry090.github.io/fastai//reference/add_datepart.html</loc>
   </url>
   <url>
-    <loc>https://henry090.github.io/fastai//reference/add_test.html</loc>
-  </url>
-  <url>
     <loc>https://henry090.github.io/fastai//reference/affine_coord.html</loc>
   </url>
   <url>
@@ -857,9 +857,6 @@
   </url>
   <url>
     <loc>https://henry090.github.io/fastai//reference/apply_perspective.html</loc>
-  </url>
-  <url>
-    <loc>https://henry090.github.io/fastai//reference/array.html</loc>
   </url>
   <url>
     <loc>https://henry090.github.io/fastai//reference/aspect.html</loc>
@@ -965,9 +962,6 @@
   </url>
   <url>
     <loc>https://henry090.github.io/fastai//reference/cutout_gaussian.html</loc>
-  </url>
-  <url>
-    <loc>https://henry090.github.io/fastai//reference/data_collate.html</loc>
   </url>
   <url>
     <loc>https://henry090.github.io/fastai//reference/dataloaders.html</loc>
@@ -1096,9 +1090,6 @@
     <loc>https://henry090.github.io/fastai//reference/forget_mult_CPU.html</loc>
   </url>
   <url>
-    <loc>https://henry090.github.io/fastai//reference/from_csv.html</loc>
-  </url>
-  <url>
     <loc>https://henry090.github.io/fastai//reference/gan_critic.html</loc>
   </url>
   <url>
@@ -1222,6 +1213,9 @@
     <loc>https://henry090.github.io/fastai//reference/less-than-equals-.fastai.torch_core.TensorMask.html</loc>
   </url>
   <url>
+    <loc>https://henry090.github.io/fastai//reference/less.html</loc>
+  </url>
+  <url>
     <loc>https://henry090.github.io/fastai//reference/less_or_equal.html</loc>
   </url>
   <url>
@@ -1315,6 +1309,9 @@
     <loc>https://henry090.github.io/fastai//reference/msle.html</loc>
   </url>
   <url>
+    <loc>https://henry090.github.io/fastai//reference/multiplygit-add-A-and-and-git-commit-m-single-quote-staging-all-files-single-quote.html</loc>
+  </url>
+  <url>
     <loc>https://henry090.github.io/fastai//reference/n_px.html</loc>
   </url>
   <url>
@@ -1375,9 +1372,6 @@
     <loc>https://henry090.github.io/fastai//reference/plot.html</loc>
   </url>
   <url>
-    <loc>https://henry090.github.io/fastai//reference/plot.list.html</loc>
-  </url>
-  <url>
     <loc>https://henry090.github.io/fastai//reference/plot_confusion_matrix.html</loc>
   </url>
   <url>
@@ -1391,6 +1385,9 @@
   </url>
   <url>
     <loc>https://henry090.github.io/fastai//reference/plus-.fastai.torch_core.TensorMask.html</loc>
+  </url>
+  <url>
+    <loc>https://henry090.github.io/fastai//reference/plus-.torch.nn.modules.container.Sequential.html</loc>
   </url>
   <url>
     <loc>https://henry090.github.io/fastai//reference/pow-.fastai.torch_core.TensorMask.html</loc>
@@ -1543,9 +1540,6 @@
     <loc>https://henry090.github.io/fastai//reference/spec_add_spaces.html</loc>
   </url>
   <url>
-    <loc>https://henry090.github.io/fastai//reference/split_by_idx.html</loc>
-  </url>
-  <url>
     <loc>https://henry090.github.io/fastai//reference/sqrd.html</loc>
   </url>
   <url>
@@ -1574,15 +1568,6 @@
   </url>
   <url>
     <loc>https://henry090.github.io/fastai//reference/summary.fastai.tabular.learner.TabularLearner.html</loc>
-  </url>
-  <url>
-    <loc>https://henry090.github.io/fastai//reference/tabular_TabularList_show_xys.html</loc>
-  </url>
-  <url>
-    <loc>https://henry090.github.io/fastai//reference/tabular_TabularList_show_xyzs.html</loc>
-  </url>
-  <url>
-    <loc>https://henry090.github.io/fastai//reference/tabular_apply.html</loc>
   </url>
   <url>
     <loc>https://henry090.github.io/fastai//reference/tabular_config.html</loc>
@@ -1634,6 +1619,9 @@
   </url>
   <url>
     <loc>https://henry090.github.io/fastai//reference/top_k_accuracy.html</loc>
+  </url>
+  <url>
+    <loc>https://henry090.github.io/fastai//reference/torch.html</loc>
   </url>
   <url>
     <loc>https://henry090.github.io/fastai//reference/train_loader.html</loc>
@@ -1760,6 +1748,9 @@
   </url>
   <url>
     <loc>https://henry090.github.io/fastai//articles/obj_detect.html</loc>
+  </url>
+  <url>
+    <loc>https://henry090.github.io/fastai//articles/optimizer.html</loc>
   </url>
   <url>
     <loc>https://henry090.github.io/fastai//articles/super_res_gan.html</loc>

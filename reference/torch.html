@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Random image batch — random_batch • fastai</title>
+<title>Core Torch — torch • fastai</title>
 
 
 <!-- jquery -->
@@ -45,8 +45,8 @@
 
 
 
-<meta property="og:title" content="Random image batch — random_batch" />
-<meta property="og:description" content="for visualization" />
+<meta property="og:title" content="Core Torch — torch" />
+<meta property="og:description" content="Core Torch" />
 
 
 
@@ -150,6 +150,18 @@
     </li>
   </ul>
 </li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Training
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="../articles/optimizer.html">Optimizers</a>
+    </li>
+  </ul>
+</li>
 <li>
   <a href="../reference/index.html">Reference</a>
 </li>
@@ -180,44 +192,24 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Random image batch</h1>
-    <small class="dont-index">Source: <a href='https://github.com/henry090/fastai/blob/master/R/image_loaders.R'><code>R/image_loaders.R</code></a></small>
-    <div class="hidden name"><code>random_batch.Rd</code></div>
+    <h1>Core Torch</h1>
+    <small class="dont-index">Source: <a href='https://github.com/henry090/fastai/blob/master/R/modules.R'><code>R/modules.R</code></a></small>
+    <div class="hidden name"><code>torch.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>for visualization</p>
+    <p>Core Torch</p>
     </div>
 
-    <pre class="usage"><span class='fu'>random_batch</span><span class='op'>(</span>
-  <span class='va'>object</span>,
-  regex <span class='op'>=</span> <span class='st'>"[0-9]+"</span>,
-  label <span class='op'>=</span> <span class='st'>"label"</span>,
-  folder_name <span class='op'>=</span> <span class='cn'>NULL</span>,
-  img_patter <span class='op'>=</span> <span class='st'>"jpg|jpeg|png"</span>
-<span class='op'>)</span></pre>
+    <pre class="usage"><span class='va'>torch</span></pre>
 
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
-    <table class="ref-arguments">
-    <colgroup><col class="name" /><col class="desc" /></colgroup>
-    <tr>
-      <th>object</th>
-      <td><p>dataloaders object</p></td>
-    </tr>
-    <tr>
-      <th>regex</th>
-      <td><p>for img titles</p></td>
-    </tr>
-    <tr>
-      <th>label</th>
-      <td><p>if dataloader from csv, then colname should be provided for viz-n</p></td>
-    </tr>
-    <tr>
-      <th>folder_name</th>
-      <td><p>if dataloader from csv, then colname should be provided for viz-n</p></td>
-    </tr>
-    </table>
 
+    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
+
+    <p>An object of class <code>python.builtin.module</code> (inherits from <code>python.builtin.object</code>) of length 2.</p>
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+
+    <p>module</p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

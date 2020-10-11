@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Mode of tensor — mode.torch.Tensor • fastai</title>
+<title>Less — less • fastai</title>
 
 
 <!-- jquery -->
@@ -37,10 +37,16 @@
 <script src="../pkgdown.js"></script>
 
 
+<!-- docsearch -->
+<script src="../docsearch.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.3/docsearch.min.css" integrity="sha256-QOSRU/ra9ActyXkIBbiIB144aDBdtvXBcNc3OTNuX/Q=" crossorigin="anonymous" />
+<link href="../docsearch.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
 
 
-<meta property="og:title" content="Mode of tensor — mode.torch.Tensor" />
-<meta property="og:description" content="Mode of tensor" />
+
+<meta property="og:title" content="Less — less" />
+<meta property="og:description" content="Less" />
 
 
 
@@ -103,6 +109,12 @@
     <li>
       <a href="../articles/medical_dcm.html">Medical image classification</a>
     </li>
+    <li>
+      <a href="../articles/data_aug.html">Data augmentation</a>
+    </li>
+    <li>
+      <a href="../articles/obj_detect.html">Object detection</a>
+    </li>
   </ul>
 </li>
 <li class="dropdown">
@@ -138,6 +150,18 @@
     </li>
   </ul>
 </li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Training
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="../articles/optimizer.html">Optimizers</a>
+    </li>
+  </ul>
+</li>
 <li>
   <a href="../reference/index.html">Reference</a>
 </li>
@@ -151,6 +175,12 @@
 </li>
       </ul>
       
+      <form class="navbar-form navbar-right hidden-xs hidden-sm" role="search">
+        <div class="form-group">
+          <input type="search" class="form-control" name="search-input" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
+        </div>
+      </form>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -162,18 +192,34 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Mode of tensor</h1>
+    <h1>Less</h1>
     <small class="dont-index">Source: <a href='https://github.com/henry090/fastai/blob/master/R/generics_tensor.R'><code>R/generics_tensor.R</code></a></small>
-    <div class="hidden name"><code>mode.torch.Tensor.Rd</code></div>
+    <div class="hidden name"><code>less.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Mode of tensor</p>
+    <p>Less</p>
     </div>
 
-    <pre class="usage"><span class='fu'>mode.torch.Tensor</span><span class='op'>(</span><span class='va'>a</span><span class='op'>)</span></pre>
+    <pre class="usage"># S3 method for torch.Tensor
+&amp;lt;(a, b)</pre>
 
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>a</th>
+      <td><p>tensor</p></td>
+    </tr>
+    <tr>
+      <th>b</th>
+      <td><p>tensor</p></td>
+    </tr>
+    </table>
 
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+
+    <p>tensor</p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -197,6 +243,23 @@
    </div>
 
   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.1/docsearch.min.js" integrity="sha256-GKvGqXDznoRYHCwKXGnuchvKSwmx9SRMrZOTh2g4Sb0=" crossorigin="anonymous"></script>
+<script>
+  docsearch({
+    
+    
+    apiKey: '6a624258596123d42fd1f24a82ab617a',
+    indexName: 'henry090',
+    inputSelector: 'input#search-input.form-control',
+    transformData: function(hits) {
+      return hits.map(function (hit) {
+        hit.url = updateHitURL(hit);
+        return hit;
+      });
+    }
+  });
+</script>
+
 
 
   </body>
