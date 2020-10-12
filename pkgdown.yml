@@ -4,6 +4,7 @@ pkgdown_sha: ~
 articles:
   Basic_Tabular: Basic_Tabular.html
   basic_img_class: basic_img_class.html
+  callbacks: callbacks.html
   catalyst: catalyst.html
   custom_img: custom_img.html
   data_aug: data_aug.html
@@ -15,7 +16,7 @@ articles:
   obj_detect: obj_detect.html
   optimizer: optimizer.html
   super_res_gan: super_res_gan.html
-last_built: 2020-10-11T15:16Z
+last_built: 2020-10-12T15:20Z
 urls:
   reference: https://henry090.github.io/fastai//reference
   article: https://henry090.github.io/fastai//articles
