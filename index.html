@@ -79,6 +79,9 @@
     <li>
       <a href="articles/audio.html">Audio classification</a>
     </li>
+    <li>
+      <a href="articles/time_series.html">Time series</a>
+    </li>
   </ul>
 </li>
 <li class="dropdown">
@@ -349,8 +352,7 @@ oxford-iiit-pet/images/american_pit_bull_terrier_129.jpg</code></pre>
   item_tfms=Resize(size = 460), bs = 10,
   batch_tfms=list(aug_transforms(size = 224, min_scale = 0.75),
                   Normalize_from_stats( imagenet_stats() )
-                  ),
-  device = 'cuda'
+                  )
 )</code></pre>
 <p>Show batch for visualization:</p>
 <pre><code>dls %&gt;% show_batch(dpi = 150)</code></pre>

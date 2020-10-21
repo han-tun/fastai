@@ -73,6 +73,9 @@
     <li>
       <a href="../articles/audio.html">Audio classification</a>
     </li>
+    <li>
+      <a href="../articles/time_series.html">Time series</a>
+    </li>
   </ul>
 </li>
 <li class="dropdown">
@@ -150,7 +153,8 @@
 
       
 
-      </header><script src="custom_img_files/accessible-code-block-0.0.1/empty-anchor.js"></script><div class="row">
+      </header><script src="custom_img_files/accessible-code-block-0.0.1/empty-anchor.js"></script><link href="custom_img_files/anchor-sections-1.0/anchor-sections.css" rel="stylesheet">
+<script src="custom_img_files/anchor-sections-1.0/anchor-sections.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>Custom Image Classification</h1>
@@ -241,8 +245,7 @@
   item_tfms  <span class="op">=</span> <span class="fu"><a href="../reference/Resize.html">Resize</a></span><span class="op">(</span>size <span class="op">=</span> <span class="fl">200</span><span class="op">)</span>, bs <span class="op">=</span> <span class="fl">15</span>,
   batch_tfms <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="fu"><a href="../reference/aug_transforms.html">aug_transforms</a></span><span class="op">(</span>size <span class="op">=</span> <span class="fl">224</span>, min_scale <span class="op">=</span> <span class="fl">0.75</span><span class="op">)</span>,
                   <span class="fu"><a href="../reference/Normalize_from_stats.html">Normalize_from_stats</a></span><span class="op">(</span> <span class="fu"><a href="../reference/imagenet_stats.html">imagenet_stats</a></span><span class="op">(</span><span class="op">)</span> <span class="op">)</span>
-  <span class="op">)</span>,
-  device <span class="op">=</span> <span class="st">'cuda'</span>
+  <span class="op">)</span>
 <span class="op">)</span>
 
 
@@ -260,7 +263,7 @@
 
 <span class="va">learn</span><span class="op">$</span><span class="va">recorder</span><span class="op">$</span><span class="va">train_metrics</span> <span class="op">=</span> <span class="cn">TRUE</span></pre></div>
 <div class="sourceCode" id="cb8"><pre class="downlit">
-<span class="va">learn</span> <span class="op">%&gt;%</span> <span class="fu"><a href="../reference/fit_one_cycle.html">fit_one_cycle</a></span><span class="op">(</span>n_epoch <span class="op">=</span> <span class="fl">5</span>, <span class="fl">1e-3</span><span class="op">)</span></pre></div>
+<span class="va">learn</span> <span class="op">%&gt;%</span> <span class="fu"><a href="../reference/fit_one_cycle.html">fit_one_cycle</a></span><span class="op">(</span><span class="fl">5</span>, <span class="fl">1e-3</span><span class="op">)</span></pre></div>
 <pre><code>epoch     train_loss  train_accuracy  train_error_rate  valid_loss  valid_accuracy  valid_er_r
 0         2.145128    0.333333        0.666667          1.205951    0.500000        0.500000  
 1         1.480864    0.650000        0.350000          0.605784    0.812500        0.187500    
