@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>View — View • fastai</title>
+<title>ShapInterpretation — ShapInterpretation • fastai</title>
 
 
 <!-- jquery -->
@@ -45,8 +45,8 @@
 
 
 
-<meta property="og:title" content="View — View" />
-<meta property="og:description" content="Reshape x to size" />
+<meta property="og:title" content="ShapInterpretation — ShapInterpretation" />
+<meta property="og:description" content="Base interpereter to use the `SHAP` interpretation library" />
 
 
 
@@ -201,23 +201,54 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>View</h1>
-    <small class="dont-index">Source: <a href='https://github.com/henry090/fastai/blob/master/R/layers.R'><code>R/layers.R</code></a></small>
-    <div class="hidden name"><code>View.Rd</code></div>
+    <h1>ShapInterpretation</h1>
+    <small class="dont-index">Source: <a href='https://github.com/henry090/fastai/blob/master/R/fastinference.R'><code>R/fastinference.R</code></a></small>
+    <div class="hidden name"><code>ShapInterpretation.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Reshape x to size</p>
+    <p>Base interpereter to use the `SHAP` interpretation library</p>
     </div>
 
-    <pre class="usage"><span class='fu'>View</span><span class='op'>(</span><span class='va'>...</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>ShapInterpretation</span><span class='op'>(</span>
+  <span class='va'>learn</span>,
+  test_data <span class='op'>=</span> <span class='cn'>NULL</span>,
+  link <span class='op'>=</span> <span class='st'>"identity"</span>,
+  l1_reg <span class='op'>=</span> <span class='st'>"auto"</span>,
+  n_samples <span class='op'>=</span> <span class='fl'>128</span>
+<span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>...</th>
-      <td><p>parameters to pass</p></td>
+      <th>learn</th>
+      <td><p>learner/model</p></td>
+    </tr>
+    <tr>
+      <th>test_data</th>
+      <td><p>should be either a Pandas dataframe or a TabularDataLoader. If not, 100 random rows of
+the training data will be used instead.</p></td>
+    </tr>
+    <tr>
+      <th>link</th>
+      <td><p>link can either be "identity" or "logit". A generalized linear model link to connect
+the feature importance values to the model output. Since the feature importance values, phi, sum up
+to the model output, it often makes sense to connect them to the ouput with a link function where
+link(outout) = sum(phi). If the model output is a probability then the LogitLink link function makes
+the feature importance values have log-odds units.</p></td>
+    </tr>
+    <tr>
+      <th>l1_reg</th>
+      <td><p>can be an integer value representing the number of features, "auto", "aic", "bic", or
+a float value. The l1 regularization to use for feature selection (the estimation procedure is based
+on a debiased lasso). The auto option currently uses "aic" when less that 20<!-- % of the possible sample -->
+space is enumerated, otherwise it uses no regularization.</p></td>
+    </tr>
+    <tr>
+      <th>n_samples</th>
+      <td><p>can either be "auto" or an integer value. This is the number of times to re-evaluate
+the model when explaining each predictions. More samples leads to lower variance estimations of the SHAP values</p></td>
     </tr>
     </table>
 
@@ -240,7 +271,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

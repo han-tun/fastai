@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>View — View • fastai</title>
+<title>Force_plot — force_plot • fastai</title>
 
 
 <!-- jquery -->
@@ -45,8 +45,9 @@
 
 
 
-<meta property="og:title" content="View — View" />
-<meta property="og:description" content="Reshape x to size" />
+<meta property="og:title" content="Force_plot — force_plot" />
+<meta property="og:description" content="Visualizes the SHAP values with an added force layout. Accepts a class_id which
+is used to indicate the class of interest for a classification model." />
 
 
 
@@ -201,23 +202,33 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>View</h1>
-    <small class="dont-index">Source: <a href='https://github.com/henry090/fastai/blob/master/R/layers.R'><code>R/layers.R</code></a></small>
-    <div class="hidden name"><code>View.Rd</code></div>
+    <h1>Force_plot</h1>
+    <small class="dont-index">Source: <a href='https://github.com/henry090/fastai/blob/master/R/fastinference.R'><code>R/fastinference.R</code></a></small>
+    <div class="hidden name"><code>force_plot.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Reshape x to size</p>
+    <p>Visualizes the SHAP values with an added force layout. Accepts a class_id which
+is used to indicate the class of interest for a classification model.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>View</span><span class='op'>(</span><span class='va'>...</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>force_plot</span><span class='op'>(</span><span class='va'>object</span>, class_id <span class='op'>=</span> <span class='fl'>0</span>, <span class='va'>...</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
+      <th>object</th>
+      <td><p>ShapInterpretation object</p></td>
+    </tr>
+    <tr>
+      <th>class_id</th>
+      <td><p>Accepts a class_id which is used to indicate the class of interest for a
+classification model. It can either be an int or str representation for a class of choice.</p></td>
+    </tr>
+    <tr>
       <th>...</th>
-      <td><p>parameters to pass</p></td>
+      <td><p>additional arguments</p></td>
     </tr>
     </table>
 
@@ -240,7 +251,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>
