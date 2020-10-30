@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Install fastai — install_fastai • fastai</title>
+<title>Timm models — timm_list_models • fastai</title>
 
 
 <!-- jquery -->
@@ -45,8 +45,8 @@
 
 
 
-<meta property="og:title" content="Install fastai — install_fastai" />
-<meta property="og:description" content="Install fastai" />
+<meta property="og:title" content="Timm models — timm_list_models" />
+<meta property="og:description" content="Timm models" />
 
 
 
@@ -201,52 +201,29 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Install fastai</h1>
-    <small class="dont-index">Source: <a href='https://github.com/henry090/fastai/blob/master/R/install_fastai.R'><code>R/install_fastai.R</code></a></small>
-    <div class="hidden name"><code>install_fastai.Rd</code></div>
+    <h1>Timm models</h1>
+    <small class="dont-index">Source: <a href='https://github.com/henry090/fastai/blob/master/R/timm_loader.R'><code>R/timm_loader.R</code></a></small>
+    <div class="hidden name"><code>timm_list_models.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Install fastai</p>
+    <p>Timm models</p>
     </div>
 
-    <pre class="usage"><span class='fu'>install_fastai</span><span class='op'>(</span>
-  <span class='va'>version</span>,
-  gpu <span class='op'>=</span> <span class='cn'>FALSE</span>,
-  cuda_version <span class='op'>=</span> <span class='st'>"10.1"</span>,
-  overwrite <span class='op'>=</span> <span class='cn'>FALSE</span>,
-  extra_pkgs <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"kaggle"</span>, <span class='st'>"transformers"</span>, <span class='st'>"pytorch_lightning"</span>, <span class='st'>"timm"</span>, <span class='st'>"catalyst"</span>,
-    <span class='st'>"ignite"</span>, <span class='st'>"tensorboard"</span>, <span class='st'>"fastinference"</span>, <span class='st'>"shap"</span>, <span class='st'>"torchaudio"</span><span class='op'>)</span>
-<span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>timm_list_models</span><span class='op'>(</span><span class='va'>...</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>version</th>
-      <td><p>specify version</p></td>
-    </tr>
-    <tr>
-      <th>gpu</th>
-      <td><p>installation of gpu</p></td>
-    </tr>
-    <tr>
-      <th>cuda_version</th>
-      <td><p>if gpu true, then cuda version is required. By default it is 10.1</p></td>
-    </tr>
-    <tr>
-      <th>overwrite</th>
-      <td><p>will install all the dependencies</p></td>
-    </tr>
-    <tr>
-      <th>extra_pkgs</th>
-      <td><p>character vector of additional packages</p></td>
+      <th>...</th>
+      <td><p>parameters to pass</p></td>
     </tr>
     </table>
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>None</p>
+    <p>vector</p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
