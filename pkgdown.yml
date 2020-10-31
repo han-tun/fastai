@@ -4,6 +4,7 @@ pkgdown_sha: ~
 articles:
   Basic_Tabular: Basic_Tabular.html
   audio: audio.html
+  audio2tf: audio2tf.html
   basic_img_class: basic_img_class.html
   callbacks: callbacks.html
   catalyst: catalyst.html
@@ -18,7 +19,7 @@ articles:
   optimizer: optimizer.html
   super_res_gan: super_res_gan.html
   time_series: time_series.html
-last_built: 2020-10-30T15:17Z
+last_built: 2020-10-31T15:15Z
 urls:
   reference: https://henry090.github.io/fastai//reference
   article: https://henry090.github.io/fastai//articles
