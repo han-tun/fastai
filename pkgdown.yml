@@ -10,6 +10,7 @@ articles:
   catalyst: catalyst.html
   custom_img: custom_img.html
   data_aug: data_aug.html
+  gpt: gpt.html
   head_pose: head_pose.html
   lightning: lightning.html
   medical_dcm: medical_dcm.html
@@ -19,7 +20,7 @@ articles:
   optimizer: optimizer.html
   super_res_gan: super_res_gan.html
   time_series: time_series.html
-last_built: 2020-11-01T15:15Z
+last_built: 2020-11-02T15:18Z
 urls:
   reference: https://henry090.github.io/fastai//reference
   article: https://henry090.github.io/fastai//articles

@@ -877,6 +877,9 @@
     <loc>https://henry090.github.io/fastai//reference/Tokenizer.html</loc>
   </url>
   <url>
+    <loc>https://henry090.github.io/fastai//reference/Tokenizer_from_df.html</loc>
+  </url>
+  <url>
     <loc>https://henry090.github.io/fastai//reference/TrackerCallback.html</loc>
   </url>
   <url>
@@ -887,6 +890,12 @@
   </url>
   <url>
     <loc>https://henry090.github.io/fastai//reference/TransformBlock.html</loc>
+  </url>
+  <url>
+    <loc>https://henry090.github.io/fastai//reference/TransformersDropOutput.html</loc>
+  </url>
+  <url>
+    <loc>https://henry090.github.io/fastai//reference/TransformersTokenizer.html</loc>
   </url>
   <url>
     <loc>https://henry090.github.io/fastai//reference/URLs_ADULT_SAMPLE.html</loc>
@@ -1154,6 +1163,9 @@
   </url>
   <url>
     <loc>https://henry090.github.io/fastai//reference/bb_pad.html</loc>
+  </url>
+  <url>
+    <loc>https://henry090.github.io/fastai//reference/bs_find.html</loc>
   </url>
   <url>
     <loc>https://henry090.github.io/fastai//reference/bt.html</loc>
@@ -1735,6 +1747,9 @@
     <loc>https://henry090.github.io/fastai//reference/plot.html</loc>
   </url>
   <url>
+    <loc>https://henry090.github.io/fastai//reference/plot_bs_find.html</loc>
+  </url>
+  <url>
     <loc>https://henry090.github.io/fastai//reference/plot_confusion_matrix.html</loc>
   </url>
   <url>
@@ -2156,6 +2171,9 @@
   </url>
   <url>
     <loc>https://henry090.github.io/fastai//articles/data_aug.html</loc>
+  </url>
+  <url>
+    <loc>https://henry090.github.io/fastai//articles/gpt.html</loc>
   </url>
   <url>
     <loc>https://henry090.github.io/fastai//articles/head_pose.html</loc>
